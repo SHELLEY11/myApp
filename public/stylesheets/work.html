@@ -1,0 +1,35 @@
+<DOCTYPRE html>   
+<html>        
+<head>            
+<title>        
+最佳工作序列           
+</title>            
+</head>            
+<body>      <!输入框设计>  
+<form action="/test.php" method="get" >                       
+最佳工作序列                         
+<hr>    
+工作总数<input type="number"  min="1" /> <br> 
+每件工作的费时<input type="number"  min="0" /> 最后完成期限<input type="number" min="0"/>  工作的价值<input type="number" min="0"/><br>
+
+<input type="submit" value="确定" onclick="main()"/>         
+</form>
+<script>
+function Work(){
+    var 每件工作的费时;
+    var 最后完成期限;
+    var 工作的价值;
+}
+var work1=new Work("4","10","2");
+var work2=new Work("3","8","3");
+var work3=new Work("2","4","3");
+var work4=new Work("1","2","6");
+function compare()
+{
+    if(work1.工作的价值/work1.每件工作的费时<work2.工作的价值/work2.每件工作的费时)
+    return work2;
+}
+</script>
+</body>      
+</html>
+</DOCTYPRE>
